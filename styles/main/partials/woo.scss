@@ -1,0 +1,52 @@
+.woocommerce-variation-price,
+.products,
+.woo-custom-loop,
+.woocommerce {
+    .price {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 24px;
+        justify-content: flex-end;
+
+        ins {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 38.4px;
+            text-decoration: none;
+        }
+
+        del bdi {
+            color: $red;
+            font-weight: 600;
+        }
+    }
+}
+
+.wc-block-components-quantity-selector {
+    background-color: $green;
+    color: #fff;
+
+    .wc-block-components-quantity-selector__button {
+        color: #fff !important;
+        opacity: 1 !important;
+        border: none !important;
+        outline: none;
+
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+}
+
+.woocommerce-page {
+    h1 {
+        font-size: 52px;
+        font-family: $font-second-name;
+        margin-bottom: 18px;
+    }
+}
+
+.added_to_cart.wc-forward{
+    display: none!important;
+}

@@ -1,0 +1,47 @@
+@import "variables";
+@import "fonts";
+@import "mixins";
+
+@import "modules/hero";
+@import "modules/products_loop";
+@import "modules/bg_image";
+@import "modules/about_section";
+@import "modules/image_text";
+@import "modules/shop_loop";
+
+@import "typo";
+
+
+@import "partials/page";
+@import "partials/login";
+@import "partials/content-single-product";
+@import "partials/product-loop";
+@import "partials/woo";
+@import "partials/cart";
+@import "partials/checkout";
+
+@import "components/header";
+@import "components/footer";
+@import "components/contact";
+@import "components/browser-reset";
+@import "components/layout";
+@import "components/buttons";
+
+body {
+  transition: 0.2s ease;
+  hyphens: none;
+  margin-top: 80px;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100vw;
+  min-height: calc(100vh - 40px * 2);
+}
+
+* {
+  font-family: $font-main-name;
+}
+
+::selection {
+  color: white;
+  background: #0086ff;
+}

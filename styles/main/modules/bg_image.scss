@@ -1,0 +1,36 @@
+.bg-image {
+    height: 100vh;
+    max-height: 960px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 32px;
+
+    @media only screen and ($md) {
+        margin-bottom: 16px;
+        max-height: 700px;
+
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #00000066;
+        z-index: -1;
+    }
+
+    .container {
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    h1,
+    p {
+        color: #fff;
+    }
+
+}

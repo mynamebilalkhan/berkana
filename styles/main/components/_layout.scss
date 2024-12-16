@@ -1,0 +1,147 @@
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+  backface-visibility: hidden;
+  will-change: background-color, color;
+  transition: background-color 1s ease-in-out, color 1s ease-in-out;
+  transform: translateZ(0);
+  overflow: hidden;
+}
+
+html,
+body {
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+body.wp-admin {
+  overflow-x: unset !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+  padding: 0 16px;
+
+  @media screen and ($min-xl) {
+    max-width: 90vw;
+  }
+
+  @media screen and ($min-md) {
+    padding: 0 40px;
+  }
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.faq-dropdown-widget {
+  margin-bottom: 32px;
+
+  &.active {
+    .accordion__icon {
+      transform: rotate(360deg);
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .faq-item__wrapper {
+    transition: 0.4s;
+    cursor: pointer;
+    padding: 10px 16px;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .accordion__icon {
+    transform: rotate(90deg);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10;
+    margin: auto;
+    transition-duration: 200ms;
+  }
+
+  h3 {
+    margin: 0;
+    padding-right: 30px;
+
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .question-wrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  .question {
+    position: relative;
+    outline: none;
+    user-select: none;
+  }
+
+  .answer {
+    margin-top: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+    .main-content {
+      padding: 10px 16px;
+
+      a {
+        color: $orange;
+      }
+
+      li {
+        margin-bottom: 0;
+      }
+
+
+    }
+  }
+}
+
+.woocommerce-shop {
+  margin-top: 100px;
+
+  @media only screen and ($md) {
+    margin-top: 90px;
+
+  }
+}
+
+body .woocommerce ul.products li.product .added_to_cart.wc-forward {
+  display: none;
+}
+
+.home {
+  .container {
+    @media screen and ($min-xl) {
+      max-width: 96vw;
+    }
+  }
+}

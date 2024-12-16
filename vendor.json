@@ -1,0 +1,13 @@
+{
+  "copy": {},
+  "styles": {
+    "admin": [],
+    "login": [],
+    "main": []
+  },
+  "scripts": {
+    "admin": [],
+    "login": [],
+    "main": []
+  }
+}

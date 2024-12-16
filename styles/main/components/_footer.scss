@@ -1,0 +1,43 @@
+body > footer {
+  z-index: 0;
+  position: relative;
+
+  padding: 64px 0;
+  $easing: 5ms ease-out;
+  @media only screen and ($md) {
+    padding: 64px 0 24px;
+  }
+
+  .footer-widgets {
+    .footer-single-widget {
+      @media only screen and ($min-md) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        @media only screen and ($md) {
+          flex-wrap: wrap;
+          margin-top: 32px;
+        }
+        li {
+          margin-left: 32px;
+          @media only screen and ($md) {
+            width: 50%;
+            margin-left: 0;
+            margin-bottom: 24px;
+          }
+          a {
+            text-decoration: none;
+            color: $text-grey;
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

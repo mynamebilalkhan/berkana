@@ -1,0 +1,234 @@
+.single-post-content {
+    margin-top: 3rem;
+
+    .product_title {
+        font-family: $font-second-name;
+    }
+
+    .onsale {
+        display: none;
+    }
+
+    .variations {
+        width: 100%;
+        margin: 40px 0;
+
+    }
+
+
+    .summary {
+        .woocommerce-product-details__short-description {
+            margin-top: 16px;
+        }
+
+        .product-composition {
+            margin-top: 40px;
+        }
+    }
+
+
+
+    .woocommerce-variation-add-to-cart {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        gap: 16px;
+        margin-top: 40px;
+    }
+
+    .quantity {
+        position: relative;
+        background-color: $green;
+        border-radius: 4px;
+        display: block;
+        color: #fff;
+        height: 48px;
+        max-width: 140px;
+
+        .td-quantity-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+
+            &.min {
+                left: 7px;
+            }
+
+            &.plus {
+                right: 7px;
+
+            }
+        }
+    }
+
+    .input-text.qty {
+        appearance: none;
+        all: unset;
+        border: 0;
+        background-color: transparent;
+        text-align: center;
+        width: 100%;
+        display: block;
+        height: 48px;
+
+
+
+        /* Remove arrows in WebKit browsers */
+        &[type="number"]::-webkit-inner-spin-button,
+        &[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        [type="number"] {
+            -moz-appearance: textfield;
+        }
+    }
+}
+
+.woo-variation-items-wrapper {
+    .button-variable-items-wrapper {
+        display: flex;
+        gap: 32px;
+
+        .variable-item {
+            flex: 1;
+            border: 1px solid $green;
+            border-radius: 3px;
+            text-align: center;
+            padding: 13px 20px;
+            cursor: pointer;
+
+            &.selected {
+                background-color: $green;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.related-products {
+    padding: 40px 0;
+    align-items: flex-start;
+
+    .heading {
+        color: #999999;
+        font-weight: 500;
+        margin-bottom: 32px;
+    }
+}
+
+.product-content {
+    display: block;
+    float: left;
+}
+
+.main-product-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 80px;
+
+    @media only screen and ($md) {
+        flex-direction: column;
+    }
+
+    @media only screen and ($min-md) {
+        .col {
+            width: 50%;
+        }
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+        margin-top: 45px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+}
+
+.review-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 32px;
+
+    @media only screen and ($md) {
+        flex-direction: column;
+    }
+
+    @media only screen and ($min-md) {
+        .col {
+            width: 50%;
+        }
+    }
+
+    .woo-reviews-form {
+        .glsr-label {
+            display: none !important;
+        }
+
+        .glsr-input,
+        .glsr-textarea {
+            outline: none !important;
+            box-shadow: none !important;
+            background-color: #ECF0F1 !important;
+            border: none !important;
+
+            &::placeholder {
+                color: #94A3B8;
+            }
+
+
+        }
+
+        .glsr-star-rating {
+            margin-top: 30px;
+            justify-content: center;
+            margin-bottom: 40px;
+
+            &--stars {
+                gap: 16px;
+
+                span {
+                    background-color: #EFF0F6;
+                    padding: 9px;
+                    border-radius: 100px;
+                    background-size: 70% !important;
+                    width: 50px;
+                    height: 50px
+                }
+            }
+        }
+
+    }
+}
+
+.single-product {
+    .entry-summary {
+
+
+        .woocommerce-product-rating {
+            margin-bottom: 16px;
+    
+            .glsr-star-rating {
+                gap: 5px;
+            }
+    
+            .woocommerce-review-link {
+                color: $green;
+            }
+        }
+    }
+    .woocommerce-notices-wrapper{
+        display: none;
+    }
+}

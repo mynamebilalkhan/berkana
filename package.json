@@ -1,0 +1,11 @@
+{
+  "name": "berkana",
+  "version": "1.0.0",
+  "description": "Sass compiler setup for berkana",
+  "scripts": {
+    "scss": "sass styles/main/main.scss _/main.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.72.0"
+  }
+}

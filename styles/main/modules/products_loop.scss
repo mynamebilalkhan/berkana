@@ -1,0 +1,83 @@
+body .products-loop.woocommerce {
+    padding: 56px 0;
+
+    .cta-section {
+        text-align: center;
+        margin-top: 32px;
+    }
+
+
+    .products-main-col {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-top: 1px solid #d7dddd;
+
+        li {
+            width: 25%;
+            border-right: 1px solid #d7dddd;
+            border-bottom: 1px solid #d7dddd;
+
+            &:nth-child(4) {
+                border-right: 0;
+            }
+
+            @media only screen and ($md) {
+                order: 1;
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    order: -2;
+                }
+            }
+
+
+            .woocommerce-LoopProduct-link,
+            a {
+                max-width: 311px;
+                margin: auto;
+
+                @media only screen and ($md) {
+                    max-width: inherit;
+                }
+            }
+
+            &.product_image {
+                width: 50%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                order: 0;
+                min-height: 500px;
+
+                @media only screen and ($xl) {
+                    width: 100%;
+                }
+
+                @media only screen and ($md) {
+                    order: 0;
+                }
+            }
+
+            @media only screen and ($xl) {
+                width: 33%;
+            }
+
+            @media only screen and ($md) {
+                width: 50%;
+                border-bottom: 1px solid #d7dddd;
+            }
+
+            &:last-child {
+                @media only screen and ($md) {
+                    width: 100%;
+                    border-bottom: 0;
+                }
+            }
+        }
+
+
+
+    }
+
+}

@@ -1,0 +1,202 @@
+body .woocommerce-form-login,
+.woocommerce-ResetPassword,
+.woocommerce-form-register,
+.woocommerce-EditAccountForm,
+.woocommerce form {
+
+  .show-password-input {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .form-row-last,
+  .form-row-last {
+    float: none;
+    width: 100%;
+  }
+
+  span em {
+    font-size: 14px;
+    margin-top: 8px;
+    display: block;
+    color: $green;
+  }
+
+  input {
+    height: 48px;
+    padding: 16px 12px;
+    border-radius: 4px;
+    background-color: #ECF0F1;
+    outline: none;
+    border: none;
+
+    &:focus {
+      background-color: #ecf0f1;
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  fieldset {
+    padding: 37px 21px 5px;
+    margin-bottom: 14px;
+    border: 1px solid $green;
+
+    .show-password-input {
+      display: none;
+    }
+
+    legend {
+      color: $green;
+    }
+  }
+}
+
+body {
+
+  .wc-block-components-form .wc-block-components-text-input label,
+  .wc-block-components-text-input label {
+    color: #94A3B8;
+  }
+
+  .wc-block-components-text-input {
+    position: relative;
+
+    .wc-block-components-validation-error {
+      position: absolute;
+      bottom: 0px;
+      left: 8px;
+
+      p {
+        color: $red;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .woocommerce-message {
+    padding: 20px 0;
+    outline: none;
+  }
+
+  .wc-block-components-form .wc-block-components-text-input input[type=email],
+  .wc-block-components-form .wc-block-components-text-input input[type=number],
+  .wc-block-components-form .wc-block-components-text-input input[type=password],
+  .wc-block-components-form .wc-block-components-text-input input[type=tel],
+  .wc-block-components-form .wc-block-components-text-input input[type=text],
+  .wc-block-components-form .wc-block-components-text-input input[type=url],
+  .wc-block-components-text-input input[type=email],
+  .wc-block-components-text-input input[type=number],
+  .wc-block-components-text-input input[type=password],
+  .wc-block-components-text-input input[type=tel],
+  .wc-block-components-text-input input[type=text],
+  .wc-block-components-text-input input[type=url],
+  .wc-blocks-components-select .wc-blocks-components-select__select,
+  .wc-blocks-components-select .wc-blocks-components-select__container {
+
+    background-color: #ECF0F1;
+    border: 0;
+
+    &:focus {
+      background-color: #ecf0f1;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.contact-us form {
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  &.invalid .wpcf7-response-output,
+  &.unaccepted .wpcf7-response-output,
+  &.payment-required .wpcf7-response-output {
+    border-color: #ffb900;
+    background: #ffb900;
+    text-align: center;
+  }
+
+  .wpcf7 form.sent .wpcf7-response-output {
+    color: white;
+    border-color: #46b450;
+    background: #46b450;
+  }
+
+  input[type="submit"] {
+    margin-top: 48px;
+    width: 100%;
+    background: linear-gradient(90deg, #d17fff 0%, #7389ff 100%);
+    border-radius: 100px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 1rem 2rem;
+    outline: none;
+    white-space: nowrap;
+    appearance: none;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid transparent;
+    line-height: 1;
+  }
+
+  .wpcf7-not-valid-tip {
+    color: #ff5a5a !important;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: right;
+    letter-spacing: 0.01em;
+    position: absolute;
+    top: 10px;
+  }
+
+  .wpcf7-spinner {
+    display: none;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    font-size: 1rem;
+    padding: 9px 0;
+    margin-top: 24px;
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #d9d9d9;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-bottom: 1px solid;
+      border-image: linear-gradient(90deg, #d17fff 0%, #7389ff 100%) 30;
+
+      outline: none;
+    }
+
+    &.wpcf7-not-valid {}
+  }
+
+  .wpcf7-form-control-wrap {
+    display: block;
+  }
+
+  label {
+    position: relative;
+
+    .wpcf7-not-valid-tip {
+      position: absolute;
+      bottom: -25px;
+      right: 0;
+      font-size: 12px;
+      color: #ff2600;
+      text-align: right;
+    }
+  }
+}

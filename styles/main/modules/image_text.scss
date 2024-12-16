@@ -1,0 +1,26 @@
+.image-text {
+    padding: 0 0 32px;
+
+    @media only screen and ($md) {
+        padding: 0 0 16px;
+    }
+
+    .main-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        &.reversed {
+            flex-direction: column-reverse;
+        }
+
+    }
+
+    .main-img {
+        height: 50vh;
+        max-height: 480px;
+        background-position: center;
+        background-size: cover;
+    }
+}

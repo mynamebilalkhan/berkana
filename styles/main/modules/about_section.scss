@@ -1,0 +1,58 @@
+.about {
+    padding: 24px 0 32px;
+    @media only screen and ($md) {
+        padding: 16px 0;
+    }
+    .main-content {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+        &.reversed {
+            flex-direction: row-reverse;
+        }
+
+        @media only screen and ($md) {
+            display: block;
+        }
+
+        .col {
+            width: 45%;
+
+            @media only screen and ($lg) {
+                width: 50%;
+            }
+
+            @media only screen and ($md) {
+                width: 100%;
+            }
+
+            &.img {
+                width: 55%;
+                text-align: center;
+
+                @media only screen and ($lg) {
+                    width: 50%;
+                }
+
+                @media only screen and ($md) {
+                    width: 100%;
+                }
+            }
+        }
+
+        h1 {
+            margin-bottom: 32px;
+        }
+
+        p {
+            @media only screen and ($lg) {
+                font-size: 17px;
+            }
+        }
+
+        img {
+            border-radius: 12px;
+        }
+    }
+}

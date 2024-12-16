@@ -1,0 +1,181 @@
+.logged-in {
+    .page-login {
+        .woocommerce {
+            padding: 85px 50px;
+
+            @media only screen and ($md) {
+                padding: 35px 30px;
+                flex-direction: column;
+            }
+        }
+
+        .woocommerce-MyAccount-navigation {
+            li {
+                padding: 7px 0;
+
+                a {
+                    text-decoration: none;
+                    color: $green;
+                }
+
+                &.is-active {
+                    a {
+                        font-weight: 700;
+                    }
+                }
+
+            }
+        }
+
+        .woocommerce .col2-set,
+        .woocommerce-page .col2-set {
+            .woocommerce-Address {
+                display: block;
+                width: 100%;
+                margin-bottom: 32px;
+
+                h2 {
+                    margin-bottom: 14px;
+                    font-size: 27px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $green;
+                    display: block;
+                    margin-bottom: 14px;
+                }
+            }
+        }
+
+        .woocommerce-MyAccount-content {
+            section {
+                align-items: flex-start;
+            }
+
+            h2 {
+                margin-bottom: 14px;
+                font-size: 27px;
+                color: $green;
+                font-family: $font-second-name;
+            }
+
+            .woocommerce-order-details {
+                margin-bottom: 32px;
+
+                .woocommerce-Price-amount {
+                    color: $green;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+
+                .wc-item-meta {
+                    margin-top: 14px;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .woocommerce-column {
+                width: 100%;
+
+            }
+
+            @media only screen and ($md) {
+                margin-top: 40px;
+            }
+
+            a {
+                color: $green;
+            }
+
+            table {
+                text-align: left;
+                width: 100%;
+
+                thead {
+                    tr {
+                        th {
+                            padding: 5px 10px;
+                            color: $green;
+                        }
+                    }
+                }
+
+                tbody {
+
+                    th,
+                    td {
+                        padding: 5px 10px;
+
+                        @media only screen and ($md) {
+                            padding: 12px 10px;
+
+                        }
+                    }
+                }
+
+                tfoot {
+                    tr {
+                        th {
+                            padding: 5px 10px;
+                            color: $green;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-login {
+    margin-top: 6rem;
+    min-height: calc(100vh - 232px);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+
+    .woocommerce form .form-row-first,
+    .woocommerce-page form .form-row-first {
+        width: 100%;
+    }
+
+    .woocommerce {
+        background-color: #fff;
+        max-width: 900px;
+        margin: auto;
+        padding: 64px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .woocommerce-LostPassword a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .woocommerce-error {
+            color: $red;
+            font-weight: 700;
+            margin-bottom: 14px;
+            outline: none;
+        }
+
+        .woocommerce-form__label-for-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 32px;
+
+            input {
+                accent-color: $green;
+                width: 24px;
+            }
+        }
+    }
+
+
+
+}

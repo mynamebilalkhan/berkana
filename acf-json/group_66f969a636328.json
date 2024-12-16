@@ -1,0 +1,45 @@
+{
+    "key": "group_66f969a636328",
+    "title": "Product page",
+    "fields": [
+        {
+            "key": "field_66f969a675cd4",
+            "label": "Composition",
+            "name": "product_composition",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Живица кедра, прополис, воск пчелиный, масла: подсолнечное зародышей пшеницы, оливковое,  кедровое, облепиховое, лавандовое, миндальное, персиковое, розовое, чабреца, чайного дерева\r\n\r\nБиологически активные вещества: \r\nсмоляные кислоты, биофлавоноиды, каротиноиды, пинены, ненасыщенные жирные кислоты, витамин Е, витамин С",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1727621718
+}
